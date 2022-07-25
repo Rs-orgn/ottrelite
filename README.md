@@ -1,0 +1,2 @@
+# TEAM-RS-OFFICIAL-CODE
+THIS IS THE WEBSITE OF THE TEAM RS "kind of a side project"
