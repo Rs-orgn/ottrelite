@@ -11,8 +11,6 @@ const fb = document.getElementById("fb");
 const tw = document.getElementById("tw");
 const ig = document.getElementById("ig");
 const red = document.getElementById("Reddit");
-//the hyperlinks to made websites (stored in <link> tags)
-const OurTeamPage = document.getElementById("team");
 //debug
 
 
@@ -36,7 +34,7 @@ yt.onclick = ()=>{
 }
 
 ot.onclick = ()=>{
-    self.location = "/-TEAM RS WEBSITE-/OurTeam/teamStats.html"
+    self.location = "/OurTeam/teamStats.html"
 }
 
 red.onclick = ()=>{
@@ -68,7 +66,7 @@ android.onclick =  ()=>{
 
 
 cont.onclick = ()=>{
-    self.location = "/-TEAM RS WEBSITE-/Contact/contact.html"
+    self.location = "/Contact/contact.html"
 }
 
 home.onclick = ()=>{
