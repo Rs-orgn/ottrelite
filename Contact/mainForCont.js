@@ -27,7 +27,7 @@ yt.addEventListener("click", ()=>{
 });
 
 home.addEventListener("click", ()=>{
-    self.location = "/-TEAM RS WEBSITE-/Main Page/main.html";
+    self.location = "/Main Page/main.html";
 });
 
 menuBut.addEventListener("click", ()=>{
@@ -43,7 +43,7 @@ menuBut.addEventListener("click", ()=>{
 });
 
 ot.onclick = () => {
-    self.location = "/-TEAM RS WEBSITE-/OurTeam/teamStats.html"
+    self.location = "/OurTeam/teamStats.html"
 }
 
 
