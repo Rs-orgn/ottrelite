@@ -1,0 +1,7 @@
+#Menu{
+    transition: visibility 200ms, opacity 200ms linear;
+}
+
+#tour{
+    font-family: 'Mochiy Pop One';
+}
