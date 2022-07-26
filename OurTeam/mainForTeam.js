@@ -31,7 +31,7 @@ YOUTUBE.addEventListener("click", ()=>{
 });
 
 HOME.addEventListener("click", ()=>{
-    self.location = "/-TEAM RS WEBSITE-/Main Page/main.html";
+    self.location = "/Main Page/main.html";
 });
 
 REDDITOFDARKFIRE.addEventListener("click", ()=>{
@@ -93,7 +93,7 @@ MENUBUT.addEventListener("click", ()=>{
     
 });
 CONTACT.onclick = ()=> {
-    self.location = "/-TEAM RS WEBSITE-/Contact/contact.html"
+    self.location = "/Contact/contact.html"
 }
 
 
