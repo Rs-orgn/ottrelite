@@ -9,7 +9,7 @@ const red = document.getElementById("Reddit");
 //other vars
 let opened = true;
 
-
+//type conversions
 
 //event listeners
 cont.onclick = ()=>{
@@ -18,7 +18,7 @@ cont.onclick = ()=>{
 yt.addEventListener("click", ()=>{
   let prop = window.confirm("This directly leads you to the YT page, continue?");
   if(prop){
-      window.location = "https://www.google.com/url?sa=t&source=web&rct=j&url=https://www.youtube.com/channel/UCCeTm3l8MAiGDP2biWm5FOw/about&ved=2ahUKEwj3q_PMvcv4AhXsR2wGHcYXC7oQjjh6BAgGEAE&usg=AOvVaw0dC2gFlCXcaneK4p58hPzH/Videos";
+      self.location.href = "https://www.google.com/url?sa=t&source=web&rct=j&url=https://www.youtube.com/channel/UCCeTm3l8MAiGDP2biWm5FOw/about&ved=2ahUKEwj3q_PMvcv4AhXsR2wGHcYXC7oQjjh6BAgGEAE&usg=AOvVaw0dC2gFlCXcaneK4p58hPzH/Videos";
   }
   else{
       alert("You canceled the request");
@@ -27,7 +27,7 @@ yt.addEventListener("click", ()=>{
 });
 
 home.addEventListener("click", ()=>{
-    self.location = "/Main Page/main.html";
+    self.location.href = "/MainPage/main.html";
 });
 
 menuBut.addEventListener("click", ()=>{
@@ -43,7 +43,7 @@ menuBut.addEventListener("click", ()=>{
 });
 
 ot.onclick = () => {
-    self.location = "/OurTeam/teamStats.html"
+    self.location.href = "/OurTeam/teamStats.html"
 }
 
 
@@ -51,12 +51,12 @@ ot.onclick = () => {
 function Close(){
     menu.style.position = "absolute";
     menu.style.visibility = "hidden";
-    menu.style.opacity = 0;
+    menu.style.opacity = '0';
 }
 
 function Open(){
     menu.style.position = "relative";
     menu.style.visibility = "visible";
-    menu.style.opacity = 1;
+    menu.style.opacity = '1';
 }
 
