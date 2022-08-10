@@ -5,6 +5,7 @@ var cont = document.getElementById("cont");
 var menu = document.getElementById("Menu");
 var menuBut = document.getElementById("MenuButs");
 var android = document.getElementById("DownloadGarena");
+var login = document.getElementById("login");
 //extraction (the social media hyperlinks)
 var fb = document.getElementById("fb");
 var tw = document.getElementById("tw");
@@ -14,6 +15,9 @@ var red = document.getElementById("Reddit");
 //other vars
 var opened = true;
 //event listeners
+login.onclick = function () {
+    self.location.href = "/Login/login.html";
+};
 yt.onclick = function () {
     var prop1 = window.confirm("This directly leads you to the YT page, continue?");
     if (prop1) {
