@@ -27,7 +27,7 @@ yt.addEventListener("click", ()=>{
 });
 
 home.addEventListener("click", ()=>{
-    self.location.href = "/MainPage/main.html";
+    self.location.href = "/MainPage/index.html";
 });
 
 menuBut.addEventListener("click", ()=>{

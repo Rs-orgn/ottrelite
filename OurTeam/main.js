@@ -1,37 +1,33 @@
-"use strict";
-exports.__esModule = true;
-/*
-const HOME = document.getElementById("hm")
-const YOUTUBE = document.getElementById("yt");
-const OURTEAM = document.getElementById("ot");
-const CONTACT = document.getElementById("cont");
-const MENU = document.getElementById("Menu");
-const MENUBUT = document.getElementById("MenuButs");
-*/
+//taking them out from DOM
+var HOME = document.getElementById("hm");
+var YOUTUBE = document.getElementById("yt");
+var OURTEAM = document.getElementById("ot");
+var CONTACT = document.getElementById("cont");
+var MENU = document.getElementById("Menu");
+var MENUBUT = document.getElementById("MenuButs");
+var LOGIN = document.getElementById('');
 //social medias
 //darkfire's
 var REDDITOFDARKFIRE = document.getElementById("RedditOfDarkfire");
 //Divine's
 var REDDITOFDIVINE = document.getElementById("RedditOfDivine");
 var REDDITOFLEGEND = document.getElementById("RedditOfLegend");
-var REDDITOFMAFIA = document.getElementById("RedditOfMafia");
+var REDDITOFMAFIA = document.getElementById("mafiaReddit");
 //Other vars
 var opened = true;
 //event listeners
-/*YOUTUBE.addEventListener("click", ()=>{
-  let prop = window.confirm("This directly leads you to the YT page, continue?");
-  if(prop){
-      window.location.href = "https://www.google.com/url?sa=t&source=web&rct=j&url=https://www.youtube.com/channel/UCCeTm3l8MAiGDP2biWm5FOw/about&ved=2ahUKEwj3q_PMvcv4AhXsR2wGHcYXC7oQjjh6BAgGEAE&usg=AOvVaw0dC2gFlCXcaneK4p58hPzH/Videos";
-  }
-  else{
-      alert("You canceled the request");
-  }
-  
+YOUTUBE.addEventListener("click", function () {
+    var prop = window.confirm("This directly leads you to the YT page, continue?");
+    if (prop) {
+        window.location.href = "https://www.google.com/url?sa=t&source=web&rct=j&url=https://www.youtube.com/channel/UCCeTm3l8MAiGDP2biWm5FOw/about&ved=2ahUKEwj3q_PMvcv4AhXsR2wGHcYXC7oQjjh6BAgGEAE&usg=AOvVaw0dC2gFlCXcaneK4p58hPzH/Videos";
+    }
+    else {
+        alert("You canceled the request");
+    }
 });
-
-HOME.addEventListener("click", ()=>{
-    self.location.href = "/MainPage/main.html";
-});*/
+HOME.addEventListener("click", function () {
+    self.location.href = "/MainPage/index.html";
+});
 REDDITOFDARKFIRE.addEventListener("click", function () {
     var prop = window.confirm("This directly leads you to the reddit account (opens the app on mobile), continue?");
     if (prop) {
@@ -59,44 +55,40 @@ REDDITOFLEGEND.addEventListener("click", function () {
         alert("You canceled the request");
     }
 });
-REDDITOFMAFIA.addEventListener("click", function () {
-    var prop = window.confirm("This directly leads you to the reddit account (opens the app on mobile), continue?");
+/*REDDITOFMAFIA.addEventListener("click", () => {
+    let prop = window.confirm("This directly leads you to the reddit account (opens the app on mobile), continue?")
     if (prop) {
-        window.location.href = "";
+        window.location = "";
     }
     else {
         alert("You canceled the request");
     }
-});
-/*OURTEAM.onclick = ()=>{
-    alert("you are already on the website");
-}
 
-MENUBUT.addEventListener("click", ()=>{
-    if(opened){
+});*/
+OURTEAM.onclick = function () {
+    alert("you are already on the website");
+};
+MENUBUT.addEventListener("click", function () {
+    if (opened) {
         opened = false;
-        Close()
+        Close();
     }
-    else{
+    else {
         opened = true;
-        Open()
+        Open();
     }
-    
 });
-CONTACT.onclick = ()=> {
-    self.location.href = "/Contact/contact.html"
-}
-*/
+CONTACT.onclick = function () {
+    self.location.href = "/Contact/contact.html";
+};
 //functions
-/*function Close(){
+function Close() {
     MENU.style.position = "absolute";
     MENU.style.visibility = "hidden";
     MENU.style.opacity = '0';
 }
-
-function Open(){
+function Open() {
     MENU.style.position = "relative";
     MENU.style.visibility = "visible";
     MENU.style.opacity = '1';
 }
-*/

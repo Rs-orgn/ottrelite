@@ -5,6 +5,7 @@ const OURTEAM = document.getElementById("ot");
 const CONTACT = document.getElementById("cont");
 const MENU = document.getElementById("Menu");
 const MENUBUT = document.getElementById("MenuButs");
+const LOGIN = document.getElementById('')
 
 //social medias
 //darkfire's
@@ -17,6 +18,7 @@ const REDDITOFMAFIA = document.getElementById("mafiaReddit");
 let opened = true;
 
 //event listeners
+
 YOUTUBE.addEventListener("click", ()=>{
   let prop = window.confirm("This directly leads you to the YT page, continue?");
   if(prop){
@@ -29,7 +31,7 @@ YOUTUBE.addEventListener("click", ()=>{
 });
 
 HOME.addEventListener("click", ()=>{
-    self.location.href = "/MainPage/main.html";
+    self.location.href = "/MainPage/index.html";
 });
 
 REDDITOFDARKFIRE.addEventListener("click", ()=>{

@@ -5,6 +5,7 @@ const cont = document.getElementById("cont");
 const menu = document.getElementById("Menu");
 const menuBut = document.getElementById("MenuButs");
 const android = document.getElementById("DownloadGarena")
+const login = document.getElementById("login");
 
 //extraction (the social media hyperlinks)
 const fb = document.getElementById("fb");
@@ -22,6 +23,9 @@ let opened = true;
 
 
 //event listeners
+login.onclick = ()=> {
+  self.location.href = "/Login/login.html";
+}
 yt.onclick = ()=>{
   let prop1 = window.confirm("This directly leads you to the YT page, continue?")
   if(prop1){

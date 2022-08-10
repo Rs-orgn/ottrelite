@@ -22,7 +22,7 @@ yt.addEventListener("click", function () {
     }
 });
 home.addEventListener("click", function () {
-    self.location.href = "/Main Page/main.html";
+    self.location.href = "/MainPage/index.html";
 });
 menuBut.addEventListener("click", function () {
     if (opened) {
