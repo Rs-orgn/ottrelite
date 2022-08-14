@@ -22,7 +22,7 @@ yt.addEventListener("click", function () {
     }
 });
 home.addEventListener("click", function () {
-    self.location.href = "/MainPage/index.html";
+    window.location.href = "http://localhost:8080/#";
 });
 menuBut.addEventListener("click", function () {
     if (opened) {
@@ -35,7 +35,7 @@ menuBut.addEventListener("click", function () {
     }
 });
 ot.onclick = function () {
-    self.location.href = "/OurTeam/teamStats.html";
+    window.location.href = "http://localhost:8080/OurTeam";
 };
 //functions
 function Close() {

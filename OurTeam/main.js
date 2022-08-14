@@ -26,7 +26,7 @@ YOUTUBE.addEventListener("click", function () {
     }
 });
 HOME.addEventListener("click", function () {
-    self.location.href = "/MainPage/index.html";
+    window.location.href = "http://localhost:8080/#";
 });
 REDDITOFDARKFIRE.addEventListener("click", function () {
     var prop = window.confirm("This directly leads you to the reddit account (opens the app on mobile), continue?");
@@ -79,7 +79,7 @@ MENUBUT.addEventListener("click", function () {
     }
 });
 CONTACT.onclick = function () {
-    self.location.href = "/Contact/contact.html";
+    self.location.href = "http://localhost:8080/ContactUs";
 };
 //functions
 function Close() {

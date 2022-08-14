@@ -16,7 +16,7 @@ var red = document.getElementById("Reddit");
 var opened = true;
 //event listeners
 login.onclick = function () {
-    self.location.href = "/Login/login.html";
+    window.location.href = "http://localhost:8080/Login";
 };
 yt.onclick = function () {
     var prop1 = window.confirm("This directly leads you to the YT page, continue?");
@@ -28,7 +28,7 @@ yt.onclick = function () {
     }
 };
 ot.onclick = function () {
-    self.location.href = "/OurTeam/teamStats.html";
+    window.location.href = "http://localhost:8080/OurTeam";
 };
 red.onclick = function () {
     var prop2 = window.confirm("This directly leads you to the subreddit (opens the app on mobile), continue?");
@@ -53,7 +53,7 @@ android.onclick = function () {
     window.location.href = "https://play.google.com/store/apps/details?id=com.dts.freefiremax";
 };
 cont.onclick = function () {
-    self.location.href = "/Contact/contact.html";
+    window.location.href = "http://localhost:8080/ContactUs";
 };
 home.onclick = function () {
     alert("You are currently on the same page");
