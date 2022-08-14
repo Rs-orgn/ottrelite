@@ -27,7 +27,7 @@ yt.addEventListener("click", ()=>{
 });
 
 home.addEventListener("click", ()=>{
-    self.location.href = "/MainPage/index.html";
+    window.location.href = "http://localhost:8080/#";
 });
 
 menuBut.addEventListener("click", ()=>{
@@ -43,7 +43,7 @@ menuBut.addEventListener("click", ()=>{
 });
 
 ot.onclick = () => {
-    self.location.href = "/OurTeam/teamStats.html"
+    window.location.href = "http://localhost:8080/OurTeam"
 }
 
 
@@ -59,4 +59,3 @@ function Open(){
     menu.style.visibility = "visible";
     menu.style.opacity = '1';
 }
-

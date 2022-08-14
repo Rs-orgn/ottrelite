@@ -7,7 +7,7 @@ const app = express();
 const path = require('path');
 
 //port
-const port = 3000 || process.env.PORT;
+const port = 8080 || process.env.PORT;
 
 
 //Confuguring the server
@@ -15,13 +15,22 @@ const port = 3000 || process.env.PORT;
 app.get('/', function(req, res) {
   res.sendFile(path.resolve('./MainPage/index.html'));
   app.use(express.static('MainPage'));
-  res.sendFile(path.resolve('./OurTeam/teamStats.html'));
-  app.use(express.static('OurTeam'))
-  res.sendFile(path.resolve('.'));
-  app.use(express.static(''))
-  res.sendFile(path.resolve('.'));
-  app.use(express.static(''))
 });
+
+app.get('/OurTeam', function(req, res) {
+    res.sendFile(path.resolve('./OurTeam/teamStats.html'));
+    app.use(express.static('OurTeam'));
+});
+
+app.get('/ContactUs', function(req, res) {
+    res.sendFile(path.resolve('./Contact/contact.html'))
+    app.use(express.static('Contact'))
+})
+
+app.get('/Login', function(req, res) {
+    res.sendFile(path.resolve('./Login/login.html'))
+    app.use(express.static('Login'))
+})
 
 app.listen(port);
 console.log('Server started at http://localhost:' + port);

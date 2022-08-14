@@ -31,7 +31,7 @@ YOUTUBE.addEventListener("click", ()=>{
 });
 
 HOME.addEventListener("click", ()=>{
-    self.location.href = "/MainPage/index.html";
+    window.location.href = "http://localhost:8080/#";
 });
 
 REDDITOFDARKFIRE.addEventListener("click", ()=>{
@@ -93,7 +93,7 @@ MENUBUT.addEventListener("click", ()=>{
     
 });
 CONTACT.onclick = ()=> {
-    self.location.href = "/Contact/contact.html"
+    self.location.href = "http://localhost:8080/ContactUs"
 }
 
 

@@ -24,7 +24,7 @@ let opened = true;
 
 //event listeners
 login.onclick = ()=> {
-  self.location.href = "/Login/login.html";
+  window.location.href = "http://localhost:8080/Login";
 }
 yt.onclick = ()=>{
   let prop1 = window.confirm("This directly leads you to the YT page, continue?")
@@ -38,7 +38,7 @@ yt.onclick = ()=>{
 }
 
 ot.onclick = ()=>{
-    self.location.href = "/OurTeam/teamStats.html"
+    window.location.href = "http://localhost:8080/OurTeam"
 }
 
 red.onclick = ()=>{
@@ -70,7 +70,7 @@ android.onclick =  ()=>{
 
 
 cont.onclick = ()=>{
-    self.location.href = "/Contact/contact.html"
+    window.location.href = "http://localhost:8080/ContactUs"
 }
 
 home.onclick = ()=>{
