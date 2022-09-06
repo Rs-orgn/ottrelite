@@ -6,7 +6,7 @@ var path = require('path');
 //port
 var port = 8080 || process.env.PORT;
 //Confuguring the server
-app.get('/', function (req, res) {
+app.get('/Dashboard', function (req, res) {
     res.sendFile(path.resolve('./MainPage/index.html'));
     app.use(express.static('MainPage'));
 });
