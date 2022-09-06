@@ -27,7 +27,7 @@ yt.addEventListener("click", ()=>{
 });
 
 home.addEventListener("click", ()=>{
-    window.location.href = "http://localhost:8080/#";
+    window.location.href+=`/Dashboard`;
 });
 
 menuBut.addEventListener("click", ()=>{
@@ -43,7 +43,7 @@ menuBut.addEventListener("click", ()=>{
 });
 
 ot.onclick = () => {
-    window.location.href = "http://localhost:8080/OurTeam"
+    window.location.href+="/OurTeam"
 }
 
 
