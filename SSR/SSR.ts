@@ -13,21 +13,25 @@ const port = 8080 || process.env.PORT;
 //Confuguring the server
 
 app.get('/Dashboard', function(req, res) {
+  res.status(200)
   res.sendFile(path.resolve('./MainPage/index.html'));
   app.use(express.static('MainPage'));
 });
 
 app.get('/OurTeam', function(req, res) {
+    res.status(200)
     res.sendFile(path.resolve('./OurTeam/teamStats.html'));
     app.use(express.static('OurTeam'));
 });
 
 app.get('/ContactUs', function(req, res) {
+    res.status(200)
     res.sendFile(path.resolve('./Contact/contact.html'))
     app.use(express.static('Contact'))
 })
 
 app.get('/Login', function(req, res) {
+    ress.status(200)
     res.sendFile(path.resolve('./Login/login.html'))
     app.use(express.static('Login'))
 })
